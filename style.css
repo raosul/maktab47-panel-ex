@@ -1,25 +1,3 @@
-
-header {
-    height:8vh;
-    background-color: rgb(51, 51, 51);
-}
-.companyName{
-    color:white;
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-size:2vw;
-}
-.companyNameDiv{
-    height:8vh;
-    width:300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.form-control{
-    background:rgb(88, 88, 88);
-    height:8vh;
-    border:0;
-}
 .mainTitle{
     display: flex;
     justify-content: space-between;
