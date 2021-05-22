@@ -1,3 +1,6 @@
+main{
+    display: flex;
+}
 .mainTitle{
     display: flex;
     justify-content: space-between;
