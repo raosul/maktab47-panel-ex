@@ -1,4 +1,6 @@
+
 .mainTitle{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -8,4 +10,14 @@
     justify-content: center;
     align-items: center;
     margin-left: 10px;
+}
+.container{
+    width: 100vw;
+    margin:0;
+    padding: 0;
+    display:flex;
+}
+section{
+    width: 100vw;
+    justify-content: space-around;
 }
