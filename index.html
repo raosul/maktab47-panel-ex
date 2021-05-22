@@ -9,7 +9,7 @@
 
 <body>
     <header >
-        <form class="input-group mb-3">
+        <form class="input-group">
             <div class="input-group-append">
                 <button class="btn btn-outline-secondary text-light bg-dark" type="button">CompanyName</button>
             </div>
@@ -19,8 +19,105 @@
             </div>
         </form>
     </header>
+    <div class="container">
+    <sidebar class="d-flex flex-column flex-shrink-0  text-white bg-light sidebar" style="width: 20%;">
+      <div class="bg-dark p-3 mb-4">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+              <span class="fs-5">Company Name</span>
+          </a>
+      </div>
+      
+      <ul class="nav nav-pills flex-column mb-auto bg-light ">
+          <li>
+              <a href="#" class="nav-link text-dark">
+                  <i class="fa fa-tachometer" aria-hidden="true"></i>
+                  Dashboard 
+              </a>
+          </li>
+          <li>
+              <a href="#" class="nav-link text-dark">
+                  <i class="fa fa-first-order" aria-hidden="true"></i>
+                  Orders
+              </a>
+          </li>
+          <li>
+              <a href="#" class="nav-link text-dark">
+                  <svg class="bi me-2" width="16" height="16">
+                      <use xlink:href="#speedometer2"></use>
+                  </svg>
+                  Products
+              </a>
+          </li>
+          <li>
+              <a href="#" class="nav-link text-dark">
+                  <svg class="bi me-2" width="16" height="16">
+                      <use xlink:href="#speedometer2"></use>
+                  </svg>
+                  Customers
+              </a>
+          </li>
+          <li>
+              <a href="#" class="nav-link text-dark">
+                  <svg class="bi me-2" width="16" height="16">
+                      <use xlink:href="#speedometer2"></use>
+                  </svg>
+                  Reports
+              </a>
+          </li>
+      </ul>
+      <hr class="">
 
-    <section id="tables" class="">
+
+      <ul class="nav nav-pills flex-column bg-light ">
+          <li>
+              <a href="#" class="nav-link text-muted">
+                  Saved Reports
+              </a>
+          </li>
+          <li>
+              <a href="#" class="nav-link text-dark">
+                  <svg class="bi me-2" width="16" height="16">
+                      <use xlink:href="#speedometer2"></use>
+                  </svg>
+                  Dashboard
+              </a>
+          </li>
+          <li>
+              <a href="#" class="nav-link text-dark">
+                  <svg class="bi me-2" width="16" height="16">
+                      <use xlink:href="#speedometer2"></use>
+                  </svg>
+                  Dashboard
+              </a>
+          </li>
+          <li>
+              <a href="#" class="nav-link text-dark">
+                  <svg class="bi me-2" width="16" height="16">
+                      <use xlink:href="#speedometer2"></use>
+                  </svg>
+                  Dashboard
+              </a>
+          </li>
+          <li>
+              <a href="#" class="nav-link text-dark">
+                  <svg class="bi me-2" width="16" height="16">
+                      <use xlink:href="#speedometer2"></use>
+                  </svg>
+                  Dashboard
+              </a>
+          </li>
+          <li>
+              <a href="#" class="nav-link text-dark">
+                  <svg class="bi me-2" width="16" height="16">
+                      <use xlink:href="#speedometer2"></use>
+                  </svg>
+                  Dashboard
+              </a>
+          </li>
+      </ul>
+
+    </sidebar>
+    <section id="tables">
         <form class="mainTitle border-bottom-0">
             <h1 class="text-start m-3">Orders</h1>
             <div>
@@ -71,6 +168,7 @@
             </tbody>
           </table>
     </section>
+  </div>
     <script src="./app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
