@@ -1,0 +1,11 @@
+.mainTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.mainTitle div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
