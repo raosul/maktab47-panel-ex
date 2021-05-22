@@ -6,13 +6,14 @@ header {
 .companyName{
     color:white;
     font-family: "Lucida Console", "Courier New", monospace;
-    font-size:20px;
-    margin-top:2vh;
-    margin-left:10px;
+    font-size:2vw;
 }
 .companyNameDiv{
     height:8vh;
     width:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .form-control{
     background:rgb(88, 88, 88);
