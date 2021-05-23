@@ -1,15 +1,7 @@
 
-
-
-// document.getElementById('ulneeded').forEach(element => {
-//     element.addEventListener('click',()=>{console.log('test')})
-// });
-
-
-
-
 Array.from(document.getElementsByClassName("loadbtn")).forEach(function(item) {
     item.addEventListener('click',()=>{
+        if(!!item.id){
         fetch(`http://localhost:3000/page${item.id}`)
   .then(response => response.json())
   .then(
@@ -30,7 +22,8 @@ function load(data){
         html += htmlSegment
     })
     document.querySelector('tbody').innerHTML = html
-}
-    })
+        }
+    }  
+})
  });
 
