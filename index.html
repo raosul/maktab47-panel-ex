@@ -98,7 +98,6 @@
                     </a>
                 </li>
             </ul>
-
         </div>
         <section id="tables" class="w-100 ">
             <nav>
@@ -166,16 +165,26 @@
         </div>
         <div id="paginationid">
             <ul class="pagination">
-              <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">Previous</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item active">
-                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
               <li class="page-item">
-                <a class="page-link" href="#">Next</a>
+                <!-- <a class="page-link" href="#" tabindex="-1">Previous</a> -->
+                <a class="page-link" href="javascript:prevPage()" id="btn_prev">Previous</a>
+              </li>
+
+              <li class="page-item active">
+                  <a class="page-link" href="javascript:changePage(1)">1</a>
+              </li>
+              <li class="page-item ">
+                <a class="page-link" href="javascript:changePage(2)">2</a>
+            </li>
+            <li class="page-item ">
+                <a class="page-link" href="javascript:changePage(3)">3</a>
+            </li>
+            <li class="page-item ">
+                <a class="page-link" href="javascript:changePage(4)">4</a>
+            </li>
+              <li class="page-item">
+                <!-- <a class="page-link" href="#">Next</a> -->
+                <a class="page-link" href="javascript:nextPage()" id="btn_next">Next</a>
               </li>
             </ul>
           </div>
@@ -183,6 +192,7 @@
 
     </main>
     <script src="./app.js"></script>
+    <script src="./pagination.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
