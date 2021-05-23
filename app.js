@@ -1,6 +1,16 @@
-url = 'http://localhost:3000/page1'
 
-fetch(url)
+
+
+// document.getElementById('ulneeded').forEach(element => {
+//     element.addEventListener('click',()=>{console.log('test')})
+// });
+
+
+
+
+Array.from(document.getElementsByClassName("loadbtn")).forEach(function(item) {
+    item.addEventListener('click',()=>{
+        fetch(`http://localhost:3000/page${item.id}`)
   .then(response => response.json())
   .then(
       data => load(data)
@@ -21,4 +31,6 @@ function load(data){
     })
     document.querySelector('tbody').innerHTML = html
 }
+    })
+ });
 
