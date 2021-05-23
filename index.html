@@ -106,10 +106,136 @@
             </li>
         </ul>
 
-    </div>
+                <li>
+                    <a href="#" class="nav-link text-muted">
+                        Saved Reports
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-dark">
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
+                        report_1
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-dark">
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
+                        report_2
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-dark">
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
+                        report_3
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-dark">
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
+                        report_4
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-dark">
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
+                        report_5
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <section id="tables" class="w-100 ">
+            <nav>
+                <form class="input-group m-0 mb-3 ">
+                    <input id="searchInput" type="text" style="background-color: rgb(72, 77, 87);"
+                        class="form-control text-light border-0 rounded-0 outline-0" placeholder="Serach"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append" style="height: 62px;">
+                        <button class="btn btn-outline-secondary bg-dark h-100 border-0 rounded-0 text-light-70"
+                            type="button">Sign out</button>
+                    </div>
+                </form>
+            </nav>
+            <div class="container-fluid">
+            <form class="mainTitle border-bottom-0">
+                <h1 class="text-start my-3">Orders</h1>
+                <div>
+                    <button type="button" class="btn btn-outline-secondary text-end">share</button>
+                    <button type="button" class="btn btn-outline-secondary text-end">export</button>
+                    <input class="form-control mx-3" type="date" value="2021-08-19" id="example-date-input">
+                </div>
+            </form>
+            <hr class="bg-dark"/>
+            <table class="table table table-striped border-top ">
+                <thead class="table">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nickname</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Personal Code</th>
+                        <th scope="col">Avatar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="paginationid">
+            <ul class="pagination">
+              <li class="page-item">
+                <!-- <a class="page-link" href="#" tabindex="-1">Previous</a> -->
+                <a class="page-link" href="javascript:prevPage()" id="btn_prev">Previous</a>
+              </li>
 
+              <li class="page-item active">
+                  <a class="page-link" href="javascript:changePage(1)">1</a>
+              </li>
+              <li class="page-item ">
+                <a class="page-link" href="javascript:changePage(2)">2</a>
+            </li>
+            <li class="page-item ">
+                <a class="page-link" href="javascript:changePage(3)">3</a>
+            </li>
+            <li class="page-item ">
+                <a class="page-link" href="javascript:changePage(4)">4</a>
+            </li>
+              <li class="page-item">
+                <!-- <a class="page-link" href="#">Next</a> -->
+                <a class="page-link" href="javascript:nextPage()" id="btn_next">Next</a>
+              </li>
+            </ul>
+          </div>
+        </section>
 
     <script src="./app.js"></script>
+    <script src="./pagination.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
