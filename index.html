@@ -4,107 +4,63 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <!-- <header >
+        <form class="input-group mb-3">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary text-light bg-dark" type="button">CompanyName</button>
+            </div>
+            <input id="searchInput" type="text" class="form-control text-light" placeholder="Serach" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary bg-dark" type="button" >Button</button>
+            </div>
+        </form>
+    </header> -->
+    <main>
+        <div class="d-flex flex-column flex-shrink-0  text-white bg-light" style="width: 250px;">
+            <div class="bg-dark p-3 mb-4">
+                <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5">Company Name</span>
+                </a>
+            </div>
 
-    <div class="d-flex flex-column flex-shrink-0  text-white bg-light" style="width: 280px;">
-        <div class="bg-dark p-3 mb-4">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <span class="fs-5">Company Name</span>
-            </a>
-        </div>
-        
-        <ul class="nav nav-pills flex-column mb-auto bg-light ">
-            <li>
-                <a href="#" class="nav-link text-dark">
-                    <i class="fa fa-tachometer" aria-hidden="true"></i>
-                    Dashboard 
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-dark">
-                    <i class="fa fa-first-order" aria-hidden="true"></i>
-                    Orders
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-dark">
-                    <svg class="bi me-2" width="16" height="16">
-                        <use xlink:href="#speedometer2"></use>
-                    </svg>
-                    Products
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-dark">
-                    <svg class="bi me-2" width="16" height="16">
-                        <use xlink:href="#speedometer2"></use>
-                    </svg>
-                    Customers
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-dark">
-                    <svg class="bi me-2" width="16" height="16">
-                        <use xlink:href="#speedometer2"></use>
-                    </svg>
-                    Reports
-                </a>
-            </li>
-        </ul>
-        <hr class="">
+            <ul class="nav nav-pills flex-column mb-auto bg-light " id="ulneeded">
+                <li >
+                    <a href="#" class="nav-link text-dark loadbtn" id="dashboard">
+                        <i class="fa fa-tachometer mx-2" aria-hidden="true"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-dark loadbtn" id="orders">
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
+                        Orders
+                    </a>
+                </li>
+                <li >
+                    <a href="#" class="nav-link text-dark loadbtn" id="products">
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
+                        Products
+                    </a>
+                </li>
+                <li >
+                    <a href="#" class="nav-link text-dark loadbtn" id="customers">
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
+                        Customers
+                    </a>
+                </li>
+                <li >
+                    <a href="#" class="nav-link text-dark loadbtn" id="reports">
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
+                        Reports
+                    </a>
+                </li>
 
-
-        <ul class="nav nav-pills flex-column mb-auto bg-light ">
-            <li>
-                <a href="#" class="nav-link text-muted">
-                    Saved Reports
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-dark">
-                    <svg class="bi me-2" width="16" height="16">
-                        <use xlink:href="#speedometer2"></use>
-                    </svg>
-                    Dashboard
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-dark">
-                    <svg class="bi me-2" width="16" height="16">
-                        <use xlink:href="#speedometer2"></use>
-                    </svg>
-                    Dashboard
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-dark">
-                    <svg class="bi me-2" width="16" height="16">
-                        <use xlink:href="#speedometer2"></use>
-                    </svg>
-                    Dashboard
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-dark">
-                    <svg class="bi me-2" width="16" height="16">
-                        <use xlink:href="#speedometer2"></use>
-                    </svg>
-                    Dashboard
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link text-dark">
-                    <svg class="bi me-2" width="16" height="16">
-                        <use xlink:href="#speedometer2"></use>
-                    </svg>
-                    Dashboard
-                </a>
-            </li>
-        </ul>
+                <hr class="">
 
                 <li>
                     <a href="#" class="nav-link text-muted">
@@ -234,6 +190,7 @@
           </div>
         </section>
 
+    </main>
     <script src="./app.js"></script>
     <script src="./pagination.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
