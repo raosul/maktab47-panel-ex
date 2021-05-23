@@ -3,7 +3,8 @@
 <head>
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -20,55 +21,47 @@
         </form>
     </header> -->
     <main>
-        <div class="d-flex flex-column flex-shrink-0  text-white bg-light" style="width: 280px;">
+        <div class="d-flex flex-column flex-shrink-0  text-white bg-light" style="width: 250px;">
             <div class="bg-dark p-3 mb-4">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                     <span class="fs-5">Company Name</span>
                 </a>
             </div>
-    
+
             <ul class="nav nav-pills flex-column mb-auto bg-light ">
                 <li>
                     <a href="#" class="nav-link text-dark">
-                        <i class="fa fa-tachometer" aria-hidden="true"></i>
-                        Dashboard 
+                        <i class="fa fa-tachometer mx-2" aria-hidden="true"></i>
+                        Dashboard
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link text-dark">
-                        <i class="fa fa-first-order" aria-hidden="true"></i>
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
                         Orders
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link text-dark">
-                        <svg class="bi me-2" width="16" height="16">
-                            <use xlink:href="#speedometer2"></use>
-                        </svg>
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
                         Products
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link text-dark">
-                        <svg class="bi me-2" width="16" height="16">
-                            <use xlink:href="#speedometer2"></use>
-                        </svg>
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
                         Customers
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link text-dark">
-                        <svg class="bi me-2" width="16" height="16">
-                            <use xlink:href="#speedometer2"></use>
-                        </svg>
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
                         Reports
                     </a>
                 </li>
-            </ul>
-            <hr class="">
-    
-    
-            <ul class="nav nav-pills flex-column mb-auto bg-light ">
+
+                <hr class="">
+
                 <li>
                     <a href="#" class="nav-link text-muted">
                         Saved Reports
@@ -76,111 +69,108 @@
                 </li>
                 <li>
                     <a href="#" class="nav-link text-dark">
-                        <svg class="bi me-2" width="16" height="16">
-                            <use xlink:href="#speedometer2"></use>
-                        </svg>
-                        Dashboard
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
+                        report_1
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link text-dark">
-                        <svg class="bi me-2" width="16" height="16">
-                            <use xlink:href="#speedometer2"></use>
-                        </svg>
-                        Dashboard
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
+                        report_2
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link text-dark">
-                        <svg class="bi me-2" width="16" height="16">
-                            <use xlink:href="#speedometer2"></use>
-                        </svg>
-                        Dashboard
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
+                        report_3
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link text-dark">
-                        <svg class="bi me-2" width="16" height="16">
-                            <use xlink:href="#speedometer2"></use>
-                        </svg>
-                        Dashboard
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
+                        report_4
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link text-dark">
-                        <svg class="bi me-2" width="16" height="16">
-                            <use xlink:href="#speedometer2"></use>
-                        </svg>
-                        Dashboard
+                        <i class="fa fa-first-order mx-2" aria-hidden="true"></i>
+                        report_5
                     </a>
                 </li>
             </ul>
-    
+
         </div>
-    <section id="tables" class="w-100">
-        <form class="input-group mb-3">
-            <input id="searchInput" type="text" class="form-control text-light" placeholder="Serach" aria-label="Recipient's username" aria-describedby="basic-addon2">
-            <div class="input-group-append" style="height: 60px;">
-              <button class="btn btn-outline-secondary bg-dark h-100" type="button" >Button</button>
-            </div>
-        </form>
-        <form class="mainTitle border-bottom-0">
-            <h1 class="text-start m-3">Orders</h1>
-            <div>
-                <button type="button" class="btn btn-outline-secondary text-end">share</button>
-                <button type="button" class="btn btn-outline-secondary text-end">export</button>
-                <input class="form-control mx-3" type="date" value="2011-08-19" id="example-date-input">
-            </div>
-        </form>
-        <table class="table table table-striped border-top">
-            <thead class="table">
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">header1</th>
-                <th scope="col">header2</th>
-                <th scope="col">header3</th>
-                <th scope="col">header4</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@mdo</td>
-              </tr>
-            </tbody>
-          </table>
-    </section>
-    
+        <section id="tables" class="w-100 ">
+            <nav>
+                <form class="input-group m-0 mb-3 ">
+                    <input id="searchInput" type="text" style="background-color: rgb(72, 77, 87);"
+                        class="form-control text-light border-0 rounded-0 outline-0" placeholder="Serach"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append" style="height: 62px;">
+                        <button class="btn btn-outline-secondary bg-dark h-100 border-0 rounded-0 text-light-70"
+                            type="button">Sign out</button>
+                    </div>
+                </form>
+            </nav>
+            <div class="container-fluid">
+            <form class="mainTitle border-bottom-0">
+                <h1 class="text-start my-3">Orders</h1>
+                <div>
+                    <button type="button" class="btn btn-outline-secondary text-end">share</button>
+                    <button type="button" class="btn btn-outline-secondary text-end">export</button>
+                    <input class="form-control mx-3" type="date" value="2021-08-19" id="example-date-input">
+                </div>
+            </form>
+            <hr class="bg-dark"/>
+            <table class="table table table-striped border-top ">
+                <thead class="table">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">header1</th>
+                        <th scope="col">header2</th>
+                        <th scope="col">header3</th>
+                        <th scope="col">header4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@mdo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </section>
+
     </main>
     <script src="./app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
-
