@@ -8,7 +8,6 @@ Array.from(document.getElementsByClassName("loadbtn")).forEach(function(item) {
       data => load(data)
   );
 function load(data){
-    // console.log(data)
     let html = ''
     data.forEach(user => {
         let htmlSegment = `
