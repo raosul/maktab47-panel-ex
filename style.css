@@ -1,0 +1,23 @@
+main{
+    display: flex;
+}
+.mainTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.mainTitle div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.loadbtn:focus{
+    background-color:rgb(114, 114, 114);
+    
+}
+#paginationid{
+    margin-left:28vw;
+
+}
+
