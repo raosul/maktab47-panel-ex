@@ -22,7 +22,7 @@ var xhttp = new XMLHttpRequest();
                 }   
       }
     
-    xhttp.open("GET", "https://60bb8c8442e1d00017620d0e.mockapi.io/testapi", true);
+    xhttp.open("GET", "http://localhost:3000/products", true);
     xhttp.send();
 }
 
