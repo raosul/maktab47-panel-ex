@@ -131,30 +131,30 @@
                         <th scope="col">Avatar</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
+                <tbody >
+                    <tr class="table-body22">
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td ></td>
+                    </tr>
+                    <tr class="table-body22">
+                        <th scope="row"></th>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr>
-                        <th scope="row">2</th>
+                    <tr class="table-body22">
+                        <th scope="row"></th>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
+                    <tr class="table-body22">
+                        <th scope="row"></th>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -164,8 +164,12 @@
             </table>
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
+=======
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >Show Modal </button>
+>>>>>>> 02b0d50f1e257506db5a2539609d955a62df843e
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -176,18 +180,26 @@
                 <div class="modal-body">
                   <form>
                     <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label">Recipient:</label>
-                      <input type="text" class="form-control" id="recipient-name">
+                      <label for="recipient-name" class="col-form-label">Nickname</label>
+                      <input type="text" class="form-control modalInput" id="nickname">
                     </div>
                     <div class="mb-3">
-                      <label for="message-text" class="col-form-label">Message:</label>
-                      <textarea class="form-control" id="message-text"></textarea>
+                      <label for="message-text" class="col-form-label">Email:</label>
+                      <input type="text" class="form-control modalInput" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Personal Code:</label>
+                        <input type="text" class="form-control modalInput" id="personal-code">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Choose Your Avatar:</label>
+                        <input type="file" class="form-control fileInput" id="avatar">
                     </div>
                   </form>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Send message</button>
+                  <button type="button" class="btn btn-primary sendModal">Send message</button>
                 </div>
               </div>
             </div>
@@ -230,6 +242,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+        <script src="formGET.js"></script>
+    <script src="./formPost.js"></script>
 </body>
 
 <<<<<<< HEAD

@@ -17,13 +17,19 @@
   "description": "Backend project for a frontend exercise for Maktab47 bootcamp, with json-server and file upload",
   "main": "index.js",
   "scripts": {
-    "backend": "node server"
+    "backend": "node server",
+    "backend:dev": "nodemon server"
   },
   "author": "Babak Khorrami",
   "license": "MIT",
   "devDependencies": {
     "json-server": "^0.16.3",
+<<<<<<< HEAD
     "multer": "^1.4.2"
 >>>>>>> ea212232bc92ac9afbd385c8912148121fc38ba5
+=======
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.7"
+>>>>>>> 02b0d50f1e257506db5a2539609d955a62df843e
   }
 }

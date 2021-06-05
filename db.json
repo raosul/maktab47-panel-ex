@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 {
   "posts": [
     { "id": 1, "title": "json-server", "author": "typicode" }
@@ -17,3 +18,33 @@
   ]
 }
 >>>>>>> ea212232bc92ac9afbd385c8912148121fc38ba5
+=======
+{
+  "products": [
+    {
+      "name": "asus laptop",
+      "brand": "asus",
+      "image": "/files/3d545729eb7cdb3f85407805ec160740",
+      "price": "1000",
+      "createdAt": 1622901942857,
+      "id": 1
+    },
+    {
+      "name": "apple laptop",
+      "brand": "apple",
+      "image": "/files/65ddd8b1bbce4d8396b62611147fa1d6",
+      "price": "2000",
+      "createdAt": 1622901942857,
+      "id": 2
+    },
+    {
+      "avatar": "blob:null/5309ae22-7427-4446-983b-da76a88ecd43",
+      "nickname": "Hekate_god",
+      "email": "mkhavari813@gmail.com",
+      "personal-code": "12",
+      "createdAt": 1622911924072,
+      "id": 3
+    }
+  ]
+}
+>>>>>>> 02b0d50f1e257506db5a2539609d955a62df843e
