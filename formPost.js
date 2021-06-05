@@ -1,21 +1,8 @@
-const url = 'https://c8c8ad1a-8be3-42cb-a6f4-8f2451733e59.mock.pstmn.io/recData'
+const url = 'http://localhost:3000/products'
 
 const data = {}
 
-// fetch(url, {
-//   method: 'POST', // or 'PUT'
-//   headers: {
-//     'Content-Type': 'application/json',
-//   },
-//   body: JSON.stringify(data),
-// })
-// .then(response => response.json())
-// .then(data => {
-//   console.log('Success:', data);
-// })
-// .catch((error) => {
-//   console.error('Error:', error);
-// });
+
 
 
 const inputModals = document.querySelectorAll('.modalInput')
@@ -29,11 +16,25 @@ sendModal.addEventListener('click',function(){
     })
     // data[fileInput.id] = showPreviewOne()
     console.log(data)
+    fetch(url, {
+        method: 'POST', // or 'PUT'
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+    });
 })
 
-function showPreviewOne(){
+// function showPreviewOne(){
     
-}
+// }
 
 fileInput.addEventListener('change',function(event){
     let src = URL.createObjectURL(event.target.files[0]);
