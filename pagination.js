@@ -149,20 +149,31 @@ var objJson = [
     }
 ]
 
+<<<<<<< HEAD
 function prevPage() {
+=======
+function prevPage()
+{
+>>>>>>> ea212232bc92ac9afbd385c8912148121fc38ba5
     if (current_page > 1) {
         current_page--;
         changePage(current_page);
     }
 }
 
+<<<<<<< HEAD
 function nextPage() {
+=======
+function nextPage()
+{
+>>>>>>> ea212232bc92ac9afbd385c8912148121fc38ba5
     if (current_page < numPages()) {
         current_page++;
         changePage(current_page);
     }
 }
 
+<<<<<<< HEAD
 function changePage(page) {
     var btn_next = document.getElementById("btn_next");
     var btn_prev = document.getElementById("btn_prev");
@@ -170,6 +181,16 @@ function changePage(page) {
 
     // var page_span = document.getElementById("page");
 
+=======
+function changePage(page)
+{
+    var btn_next = document.getElementById("btn_next");
+    var btn_prev = document.getElementById("btn_prev");
+    var listing_table = document.querySelector('tbody');
+    
+    // var page_span = document.getElementById("page");
+    
+>>>>>>> ea212232bc92ac9afbd385c8912148121fc38ba5
     if (page < 1) page = 1;
     if (page > numPages()) {
         page = numPages();
@@ -180,11 +201,19 @@ function changePage(page) {
     }
     listing_table.innerHTML = "";
 
+<<<<<<< HEAD
     for (var i = (page - 1) * records_per_page; i < (page * records_per_page); i++) {
 
         document.getElementsByClassName("page-item")[page].classList.add("active")
         listing_table.innerHTML +=
             `
+=======
+    for (var i = (page-1) * records_per_page; i < (page * records_per_page); i++) {
+        
+        document.getElementsByClassName("page-item")[page].classList.add("active")
+        listing_table.innerHTML +=
+        `
+>>>>>>> ea212232bc92ac9afbd385c8912148121fc38ba5
         <tr>
             <th scope="row">${objJson[i].id}</th>
             <td>${objJson[i].name}</td>
@@ -193,9 +222,15 @@ function changePage(page) {
             <td><img src=${objJson[i].avatar} style="width : 35px; border-radius : 50%"></td>
         </tr>`;
         if (objJson.id)
+<<<<<<< HEAD
             html += htmlSegment
     }
     // page_span.innerHTML = page;
+=======
+        html += htmlSegment
+    }
+    page_span.innerHTML = page;
+>>>>>>> ea212232bc92ac9afbd385c8912148121fc38ba5
 
     if (page == 1) {
         btn_prev.style.visibility = "hidden";
@@ -209,10 +244,19 @@ function changePage(page) {
         btn_next.style.visibility = "visible";
     }
 }
+<<<<<<< HEAD
 function numPages() {
     return Math.ceil(objJson.length / records_per_page);
 }
 
 function createPaginationItem() {
+=======
+function numPages()
+{
+    return Math.ceil(objJson.length / records_per_page);
+}
+
+function createPaginationItem(){
+>>>>>>> ea212232bc92ac9afbd385c8912148121fc38ba5
     document.getElementsByClassName("page-item")[1]
 }
