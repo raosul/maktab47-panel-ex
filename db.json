@@ -15,6 +15,14 @@
       "price": "2000",
       "createdAt": 1622901942857,
       "id": 2
+    },
+    {
+      "avatar": "blob:null/5309ae22-7427-4446-983b-da76a88ecd43",
+      "nickname": "Hekate_god",
+      "email": "mkhavari813@gmail.com",
+      "personal-code": "12",
+      "createdAt": 1622911924072,
+      "id": 3
     }
   ]
 }
