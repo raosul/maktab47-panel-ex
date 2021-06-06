@@ -1,4 +1,22 @@
 {
+  "dashboard": [
+    {
+      "name": "asus laptop",
+      "brand": "asus",
+      "image": "/files/3d545729eb7cdb3f85407805ec160740",
+      "price": "1000",
+      "createdAt": 1622901942857,
+      "id": 1
+    },
+    {
+      "name": "apple laptop",
+      "brand": "apple",
+      "image": "/files/65ddd8b1bbce4d8396b62611147fa1d6",
+      "price": "2000",
+      "createdAt": 1622901942857,
+      "id": 2
+    }
+  ],
   "products": [
     {
       "name": "asus laptop",
@@ -46,11 +64,25 @@
       "id": 6
     },
     {
-      "nickname": "123",
-      "email": "1234",
-      "personal-code": "jjjj",
-      "createdAt": 1622960635419,
+      "nickname": "mohammad",
+      "email": "kalantari01@gmail.com",
+      "personal-code": "121212",
+      "createdAt": 1622960687232,
       "id": 7
+    },
+    {
+      "nickname": "mohammad",
+      "email": "kalantari01@gmail.com",
+      "personal-code": "121212",
+      "createdAt": 1622963141182,
+      "id": 8
+    },
+    {
+      "nickname": "mohammad",
+      "email": "kalantari01@gmail.com",
+      "personal-code": "121212",
+      "createdAt": 1622963169331,
+      "id": 9
     }
   ]
 }

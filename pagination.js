@@ -1,10 +1,6 @@
 var current_page = 1;
 var records_per_page = 5;
 
-
-
-
-
 function prevPage()
 {
     if (current_page > 1) {
@@ -27,7 +23,6 @@ function changePage(page)
     var btn_prev = document.getElementById("btn_prev");
     var listing_table = document.querySelector('tbody');
     current_page = page;
-    // var page_span = document.getElementById("page");
 
     if (page < 1) page = 1;
     if (page > numPages()) {
@@ -39,17 +34,17 @@ function changePage(page)
     }
     listing_table.innerHTML = "";
 
-    for (var i = ((page-1) * records_per_page) ; i < (page * records_per_page) ; i++) {
+    for (var i = ((page-1) * records_per_page) ; i < (page * records_per_page) && i < objJson.length ; i++) {
 
         document.getElementsByClassName("page-item")[page].classList.add("active")
         listing_table.innerHTML +=
             `
         <tr>
-            <th scope="row">${objJson[i+1].id}</th>
-            <td>${objJson[i+1].name}</td>
-            <td>${objJson[i+1].email}</td>
-            <td>${objJson[i+1].personalCode}</td>
-            <td><img src=${objJson[i+1].avatar} style="width : 35px; border-radius : 50%"></td>
+            <th scope="row">${objJson[i].id}</th>
+            <td>${objJson[i].name}</td>
+            <td>${objJson[i].email}</td>
+            <td>${objJson[i].personalCode}</td>
+            <td><img src=${objJson[i].avatar} style="width : 35px; border-radius : 50%"></td>
         </tr>`;
         if (objJson.id)
             html += htmlSegment
@@ -70,7 +65,7 @@ function changePage(page)
 }
 function numPages()
 {
-    return Math.ceil((objJson.length-1) / records_per_page);
+    return Math.ceil((objJson.length) / records_per_page);
 }
 
 function createPaginationItem(){
