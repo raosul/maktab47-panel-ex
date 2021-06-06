@@ -30,8 +30,6 @@ function load(data){
 })
  });
 
-<<<<<<< HEAD
-=======
    var exampleModal = document.getElementById('exampleModal')
    exampleModal.addEventListener('show.bs.modal', function (event) {
    var button = event.relatedTarget
@@ -41,4 +39,3 @@ function load(data){
    modalTitle.textContent = 'New message to ' + recipient
    modalBodyInput.value = recipient
  })
->>>>>>> ea212232bc92ac9afbd385c8912148121fc38ba5

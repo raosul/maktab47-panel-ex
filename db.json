@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-{
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ]
-}
-=======
-{
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ]
-}
->>>>>>> ea212232bc92ac9afbd385c8912148121fc38ba5
-=======
 {
   "products": [
     {
@@ -47,4 +26,3 @@
     }
   ]
 }
->>>>>>> 02b0d50f1e257506db5a2539609d955a62df843e
