@@ -1,8 +1,9 @@
 const productBtn=document.querySelector('#products');
-productBtn.addEventListener('click', () => {
-    console.log('salammmmm')
-})
+// productBtn.addEventListener('click', () => {
+//     console.log('salammmmm')
+// })
 function getForm() {
+    console.log('salammmmm')
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -21,6 +22,7 @@ function getForm() {
                                 </tr>`
                 html += htmlSegment
             })
+            objJson  = data;
             document.querySelector('tbody').innerHTML = html
         }
     }
