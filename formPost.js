@@ -1,9 +1,9 @@
-import formGET from "./formGET";
+// import formGET from "./formGET";
 const url = 'http://localhost:3000/products';
 
 const data = {}
 
-
+// console.log(formGET)
 
 
 const inputModals = document.querySelectorAll('.modalInput')
@@ -12,6 +12,7 @@ const fileInput = document.querySelector('.fileInput')
 // console.log(inputModals[3])
 
 sendModal.addEventListener('click', function () {
+  console.log('salam')
   inputModals.forEach((item) => {
     data[item.id] = item.value
   })

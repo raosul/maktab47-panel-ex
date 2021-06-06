@@ -5,7 +5,8 @@ Array.from(document.getElementsByClassName("loadbtn")).forEach(function(item) {
         fetch(`http://localhost:3000/${item.id}`)
   .then(response => response.json())
   .then(
-      data => load(data)
+      
+      data => { load(data); console.log(data) }
   );
 function load(data){
     // let html = ''
